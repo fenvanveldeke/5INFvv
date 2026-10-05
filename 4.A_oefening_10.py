@@ -6,3 +6,13 @@ for i in range(1,11):
     lijst.append(getal)
 print(lijst)
 
+maximum = []
+minimum = []
+for getal in lijst:
+    if getal < minimum:
+        minimum = getal
+    if getal > maximum:
+        maximum = getal
+
+print (maximum)
+print (minimum)
