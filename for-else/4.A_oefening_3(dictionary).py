@@ -10,6 +10,6 @@ for beurt in range(100):
      "5) Afsluiten" 
 })
 keuze = input("kies een optie :")
-if keuze = "1":
+if keuze == "1":
     naam = input("geef de naam:")
     telefoonnummer = input("geef telefoonnummer")
