@@ -2,7 +2,8 @@ telefoonboek = {}
 afgesloten = False 
 for beurt in range(1000):
     if not afgesloten:
-        print("1.telefoonboek menu")
+        print("Telefoonboek menu")
+        print("1. telefoonnummer toevoegen")
         print("2. contact zoeken")
         print("3.contact verwijderen")
         print("4 alle contacten weergeven")
@@ -18,17 +19,17 @@ for beurt in range(1000):
 
         elif keuze == "2" :
             naam = input("welke naam zoek je ")
-        if naam in telefoonboek:
-            print(f"{naam}: {telefoonboek[naam]}")
-        else:
-            print("contact niet gevonden")
+            if naam in telefoonboek:
+                print(f"{naam}: {telefoonboek[naam]}")
+            else:
+                print("contact niet gevonden")
         
         if keuze == "3":
             naam = input("Welk contact wil je vewijderen?")
-        if naam in telefoonboek:
-            del telefoonboek[naam]
-        else:
-            print("contact niet gevonden")
+            if naam in telefoonboek:
+                del telefoonboek[naam]
+            else:
+                print("contact niet gevonden")
 
 
         if keuze == "4":
